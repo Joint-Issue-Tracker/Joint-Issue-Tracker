@@ -5,16 +5,6 @@ body:
   attributes:
     value: "## MCC Halo Editing Kit Issue Form"
 - type: dropdown
-  id: issuetype
-  attributes:
-    label: "What type of issue is this?"
-    description: If it is not a bug, select feedback.
-    options:
-      - Bug
-      - Feedback
-  validations:
-    required: true
-- type: dropdown
   id: toolkit
   attributes:
     label: "Which game's editing kit is affected by the issue?"
@@ -30,7 +20,7 @@ body:
   id: tool-types
   attributes:
     label: Which tools are affected by the issue?
-    description: Input each tool that the issue is affecting.
+    description: Input each tool that the issue is affecting. If the issue is specific to MCC, include that.
   validations:
     required: true
 - type: textarea
@@ -51,6 +41,7 @@ body:
   id: repro-success
   attributes:
     label: How often does the issue occur?
+    description: When attempting to reproduce the issue, how often are you successful?
     options:
       - Once
       - 25%
