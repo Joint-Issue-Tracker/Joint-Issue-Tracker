@@ -1,0 +1,72 @@
+name: MCC Halo Editing Kit Issue Form
+description: Create a new issue for the the MCC Halo Editing Kit.
+body:
+- type: markdown
+  attributes:
+    value: "## MCC Halo Editing Kit Issue Form"
+- type: dropdown
+  id: toolkit
+  attributes:
+    label: "Which game's editing kit is affected by the issue?"
+    description: If the issue affects more than one game, submit another form.
+    options:
+      - H1EK
+      - H2EK
+      - H3EK
+      - H3ODSTEK
+  validations:
+    required: true
+- type: input
+  id: tool-types
+  attributes:
+    label: Which tools are affected by the issue?
+    description: Input each tool that the issue is affecting.
+  validations:
+    required: true
+- type: textarea
+  id: description
+  attributes:
+    label: Issue description
+    description: Describe the issue in detail.
+  validations:
+    required: true
+- type: textarea
+  id: reproduction-steps
+  attributes:
+    label: Reproduction steps
+    description: Write how to reproduce the issue.
+  validations:
+    required: true
+- type: dropdown
+  id: repro-success
+  attributes:
+    label: How often does the issue occur?
+    options:
+      - Once
+      - 25%
+      - 50%
+      - 75%
+      - 100%
+  validations:
+    required: true
+- type: textarea
+  id: impact
+  attributes:
+    label: Issue impact
+    description: How impactful is the issue?
+  validations:
+    required: true
+- type: textarea
+  id: comments
+  attributes:
+    label: Additional comments
+    description: Write any additional comments you have here.
+  validations:
+    required: false
+- type: textarea
+  id: media
+  attributes:
+    label: Media
+    description: If your issue has a visual portion, include media here.
+  validations:
+    required: false

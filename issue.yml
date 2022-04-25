@@ -1,0 +1,13 @@
+name: Labeling new issue
+on:
+  issues:
+      types: ['opened']
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Renato66/auto-label@v2 # or v2.1.5
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          labels-not-allowed: '["crash","duplicate","feedback","bug","wontfix"]'
+          labels-synonyms: '{"tag_test":["tagtest","standalone"]}'
