@@ -1,0 +1,46 @@
+name: MCC Halo Editing Kit Feedback Form
+description: Submit feedback for the MCC Halo Editing Kits.
+body:
+- type: markdown
+  attributes:
+    value: "## MCC Halo Editing Kit Feedback Form"
+- type: dropdown
+  id: toolkit
+  attributes:
+    label: "Which game's editing kit does your feedback pertain to?"
+    description: If your feedback is for more than one game, submit another form.
+    options:
+      - H1EK
+      - H2EK
+      - H3EK
+      - H3ODSTEK
+  validations:
+    required: true
+- type: input
+  id: tool-types
+  attributes:
+    label: Which tools does this feedback concern?
+    description: Input each tool that you have feedback for. You may include MCC if it is relevant.
+  validations:
+    required: true
+- type: textarea
+  id: description
+  attributes:
+    label: Feedback
+    description: Write down your feedback here.
+  validations:
+    required: true
+- type: textarea
+  id: comments
+  attributes:
+    label: Additional comments
+    description: Write any additional comments you have here.
+  validations:
+    required: false
+- type: textarea
+  id: media
+  attributes:
+    label: Media
+    description: If your feedback has a visual portion, include media here.
+  validations:
+    required: false
