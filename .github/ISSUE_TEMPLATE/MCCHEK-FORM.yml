@@ -5,6 +5,16 @@ body:
   attributes:
     value: "## MCC Halo Editing Kit Issue Form"
 - type: dropdown
+  id: issuetype
+  attributes:
+    label: "What type of issue is this?"
+    description: If it is not a bug, select feedback.
+    options:
+      - Bug
+      - Feedback
+  validations:
+    required: true
+- type: dropdown
   id: toolkit
   attributes:
     label: "Which game's editing kit is affected by the issue?"
