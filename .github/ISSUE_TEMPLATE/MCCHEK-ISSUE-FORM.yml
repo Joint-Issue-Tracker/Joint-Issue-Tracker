@@ -21,13 +21,13 @@ body:
   attributes:
     label: Which tools are affected by the issue?
     description: Check each tool that the issue is affecting. If the issue is specific to MCC, include that.
-  options:
-    - label: Guerilla
-    - label: Sapien
-    - label: Tag Test
-    - label: Tool
-    - label: Tool_Fast
-    - label: MCC
+    options:
+      - label: Guerilla
+      - label: Sapien
+      - label: Tag Test
+      - label: Tool
+      - label: Tool_Fast
+      - label: MCC
   validations:
     required: true
 - type: textarea
