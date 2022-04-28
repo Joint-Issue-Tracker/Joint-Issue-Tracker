@@ -16,11 +16,18 @@ body:
       - H3ODSTEK
   validations:
     required: true
-- type: input
+- type: checkboxes
   id: tool-types
   attributes:
-    label: Which tools does this feedback concern?
-    description: Input each tool that you have feedback for. You may include MCC if it is relevant.
+    label: Which tools are affected by the issue?
+    description: Check each tool that the issue is affecting. If the issue is specific to MCC, include that.
+    options:
+      - label: Guerilla
+      - label: Sapien
+      - label: Tag Test
+      - label: Tool
+      - label: Tool_Fast
+      - label: MCC
   validations:
     required: true
 - type: textarea
@@ -30,13 +37,6 @@ body:
     description: Write down your feedback here.
   validations:
     required: true
-- type: textarea
-  id: comments
-  attributes:
-    label: Additional comments
-    description: Write any additional comments you have here.
-  validations:
-    required: false
 - type: textarea
   id: media
   attributes:
