@@ -16,11 +16,18 @@ body:
       - H3ODSTEK
   validations:
     required: true
-- type: input
+- type: checkboxes
   id: tool-types
   attributes:
     label: Which tools are affected by the issue?
-    description: Input each tool that the issue is affecting. If the issue is specific to MCC, include that.
+    description: Check each tool that the issue is affecting. If the issue is specific to MCC, include that.
+  options:
+    - label: Guerilla
+    - label: Sapien
+    - label: Tag Test
+    - label: Tool
+    - label: Tool_Fast
+    - label: MCC
   validations:
     required: true
 - type: textarea
@@ -34,7 +41,7 @@ body:
   id: reproduction-steps
   attributes:
     label: Reproduction steps
-    description: Write how to reproduce the issue.
+    description: Write steps on how to reproduce the issue.
   validations:
     required: true
 - type: dropdown
