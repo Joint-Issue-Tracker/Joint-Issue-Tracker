@@ -59,7 +59,7 @@ body:
   id: debug_logs
   attributes:
     label: Debug logs
-    description: Please upload `crash_info.txt` and `debug.txt` here if possible.
+    description: Please upload `crash_info.txt` and `debug.txt` here if possible. **Note these files can include your computer and username so if that's a concern you can edit them to redact that information.**
   validations:
     required: false
 - type: dropdown
@@ -79,7 +79,7 @@ body:
   id: impact
   attributes:
     label: Issue impact
-    description: How impactful is the issue?
+    description: How impactful is the issue? Does this bug/lack of feature break your workflow? Are there any workarounds for it?
   validations:
     required: false
 - type: textarea
