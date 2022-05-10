@@ -53,7 +53,7 @@ body:
   id: reproduction-steps
   attributes:
     label: Reproduction steps
-    description: Write steps on how to reproduce the issue. Please include as much detail as you can. Upload any custom tags required to reproduce the issue. Please do not upload compiled map files.
+    description: Write steps on how to reproduce the issue. Please include as much detail as you can. Upload any custom tags required to reproduce the issue. Please do not upload compiled map files. For some feedback issues this might not be applicable - just enter "N/A" so Github will let you submit the issue.
   validations:
     required: true
 - type: textarea
