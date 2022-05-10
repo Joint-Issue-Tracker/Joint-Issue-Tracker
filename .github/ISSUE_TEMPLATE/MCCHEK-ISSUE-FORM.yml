@@ -1,6 +1,6 @@
 name: MCC Halo Editing Kit Issue Form
 description: Create a new issue for the the MCC Halo Editing Kit.
-labels: ["triage"]
+labels: ["triage", "confirmation needed"]
 body:
 - type: markdown
   attributes:
