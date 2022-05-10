@@ -1,0 +1,24 @@
+name: Bug tracker meta issue
+description: Create a new issue relating to the procedures or templates used by the issue tracker. 
+labels: ["meta"]
+body:
+- type: markdown
+  attributes:
+    value: "## Meta Issue form"
+- type: dropdown
+  id: type
+  attributes:
+    label: "I confirm this not a toolkit issue but an issue relating to the bug tracker itself."
+    description: Toolkit issue cannot be filled using this form.
+    options:
+      - Confirm
+  validations:
+    required: true
+- type: textarea
+  id: comments
+  attributes:
+    label: Issue
+    description: Your issue here.
+  validations:
+    required: true
+
