@@ -1,5 +1,6 @@
 name: MCC Halo Editing Kit Issue Form
 description: Create a new issue for the the MCC Halo Editing Kit.
+labels: ["triage"]
 body:
 - type: markdown
   attributes:
@@ -31,14 +32,14 @@ body:
   id: tool-types
   attributes:
     label: Which tools are affected by the issue?
-    description: Check each tool that the issue is affecting. If the issue is specific to MCC, include that.
+    description: Check each tool that the issue is affecting. Only report in-game issues that are modding related. Please report all other in-game issue through [the official channels](https://support.halowaypoint.com/hc/en-us/articles/360036218972-How-to-Submit-a-Halo-Support-Ticket)
     options:
-      - label: Guerilla
-      - label: Sapien
-      - label: Standalone
-      - label: Tool
-      - label: Tool Fast
-      - label: MCC
+      - label: Guerilla (`guerilla.exe`)
+      - label: Sapien (`sapien.exe`)
+      - label: Standalone (`halox_tag_test.exe`)
+      - label: Tool (`tool.exe`)
+      - label: Tool Fast (`tool_fast.exe` - unsupported)
+      - label: In-game (MCC)
   validations:
     required: true
 - type: textarea
