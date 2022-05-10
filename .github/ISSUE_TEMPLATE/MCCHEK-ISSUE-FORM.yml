@@ -5,6 +5,17 @@ body:
   attributes:
     value: "## MCC Halo Editing Kit Issue Form"
 - type: dropdown
+  id: type
+  attributes:
+    label: "Issue type: Is this a bug or feature request?"
+    description: If you are unsure just make a best effort.
+    options:
+      - Bug
+      - Feature request
+      - Other
+  validations:
+    required: true
+- type: dropdown
   id: toolkit
   attributes:
     label: "Which game's editing kit is affected by the issue?"
@@ -24,9 +35,9 @@ body:
     options:
       - label: Guerilla
       - label: Sapien
-      - label: Tag Test
+      - label: Standalone
       - label: Tool
-      - label: Tool_Fast
+      - label: Tool Fast
       - label: MCC
   validations:
     required: true
@@ -34,16 +45,23 @@ body:
   id: description
   attributes:
     label: Issue description
-    description: Describe the issue in detail.
+    description: Describe the issue in detail. If this is a visual issue include screenshots or videos.
   validations:
     required: true
 - type: textarea
   id: reproduction-steps
   attributes:
     label: Reproduction steps
-    description: Write steps on how to reproduce the issue.
+    description: Write steps on how to reproduce the issue. Please include as much detail as you can. Upload any custom tags required to reproduce the issue. Please do not upload compiled map files.
   validations:
     required: true
+- type: textarea
+  id: debug_logs
+  attributes:
+    label: Debug logs
+    description: Please upload `crash_info.txt` and `debug.txt` here if possible.
+  validations:
+    required: false
 - type: dropdown
   id: repro-success
   attributes:
@@ -63,7 +81,7 @@ body:
     label: Issue impact
     description: How impactful is the issue?
   validations:
-    required: true
+    required: false
 - type: textarea
   id: comments
   attributes:
@@ -71,10 +89,4 @@ body:
     description: Write any additional comments you have here.
   validations:
     required: false
-- type: textarea
-  id: media
-  attributes:
-    label: Media
-    description: If your issue has a visual portion, include media here.
-  validations:
-    required: false
+
