@@ -9,7 +9,7 @@ body:
   id: type
   attributes:
     label: "I confirm this not a toolkit issue but an issue relating to the bug tracker itself."
-    description: Toolkit issue cannot be filled using this form.
+    description: Toolkit issue cannot be filled using this form. Please switch to the "MCC Halo Editing Kit Issue Form" template.
     options:
       - Confirm
   validations:
