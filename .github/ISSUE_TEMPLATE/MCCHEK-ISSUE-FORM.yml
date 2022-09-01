@@ -26,6 +26,9 @@ body:
       - H2EK
       - H3EK
       - H3ODSTEK
+      - HREK
+      - H4EK
+      - H2AEK
   validations:
     required: true
 - type: checkboxes
@@ -39,6 +42,7 @@ body:
       - label: Standalone (`halox_tag_test.exe`)
       - label: Tool (`tool.exe`)
       - label: Tool Fast (`tool_fast.exe` - unsupported)
+      - label: MegaloEdit (`MegaloEdit.exe`)
       - label: In-game (MCC)
   validations:
     required: true
