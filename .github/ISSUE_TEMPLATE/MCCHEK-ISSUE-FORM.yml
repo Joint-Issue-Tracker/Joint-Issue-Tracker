@@ -38,6 +38,7 @@ body:
     description: Check each tool that the issue is affecting. Only report in-game issues that are modding related. Please report all other in-game issue through [the official channels](https://support.halowaypoint.com/hc/en-us/articles/360036218972-How-to-Submit-a-Halo-Support-Ticket)
     options:
       - label: Guerilla (`guerilla.exe`)
+      - label: Foundation (`Foundation.exe`)
       - label: Sapien (`sapien.exe`)
       - label: Standalone (`halox_tag_test.exe`)
       - label: Tool (`tool.exe`)
