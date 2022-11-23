@@ -1,0 +1,30 @@
+name: Mod Documentation Issue
+description: Create a new issue for the MCC Creator Documentation.
+labels: ["docs"]
+body:
+- type: markdown
+  attributes:
+    value: "## Mod Documentation Issue Form"
+- type: dropdown
+  id: type
+  attributes:
+    label: "I confirm this not a toolkit issue but an issue relating to the MCC Modding Documentation."
+    description: Toolkit issue cannot be filled using this form. Please switch to the "MCC Halo Editing Kit Issue Form" template.
+    options:
+      - Confirm
+  validations:
+    required: true
+- type: textarea
+  id: doclink
+  attributes:
+    label: Document Link
+    description: A link to a web page with the relevant document.
+  validations:
+    required: true
+- type: textarea
+  id: comments
+  attributes:
+    label: Issue
+    description: Describe your issue or feedback.
+  validations:
+    required: true
